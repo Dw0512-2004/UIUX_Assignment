@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
+  m_Name: Song_1 1
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: Piano Partita No. 2  In C Minor, BWV 826
+  author: Johann Sebastian Bach
+  albumArt: {fileID: 1529004468571396027, guid: 8963f9114dcbcf845a4e9d7de92eb9dd, type: 3}
+  backgroundColor: {r: 0.15686275, g: 0.34901962, b: 0.5058824, a: 1}
+  easyLevel: 2
+  normalLevel: 5
+  hardLevel: 9
+  outlineSprite: {fileID: 4081227100581695184, guid: a1aab227c30a4eb4ea14aec08f6f8c77, type: 3}
+  circleInSprite: {fileID: 8555302147026609612, guid: b6217216813af4842aebc61e767d37e2, type: 3}
+  circleOutSprite: {fileID: 1122699094910073749, guid: cfd9ba89b83c4b54186866181d7f5105, type: 3}
+  score: 0

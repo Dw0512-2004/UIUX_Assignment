@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
+  m_Name: Song_1
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: 'Eine Kleine Nachtmusik  K. 525: I. Allegro'
+  author: Wolfgang Amadeus Mozart
+  albumArt: {fileID: 2641698482785147981, guid: bb03dbf2c3a5c784592f49290e26649f, type: 3}
+  backgroundColor: {r: 0.5058824, g: 0.14901961, b: 0.16470589, a: 1}
+  easyLevel: 3
+  normalLevel: 5
+  hardLevel: 7
+  outlineSprite: {fileID: 4315845943503376552, guid: d1db0dafd8f8b6c4a895f27e5ef0e15a, type: 3}
+  circleInSprite: {fileID: -6784687025877573032, guid: b2de46dba7d58984ab0e94fa0c391999, type: 3}
+  circleOutSprite: {fileID: -7590070660831232634, guid: 71e73c26cf819b34b86de4d3c72fc51e, type: 3}
+  score: 0

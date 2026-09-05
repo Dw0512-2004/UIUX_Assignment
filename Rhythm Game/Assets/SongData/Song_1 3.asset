@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
+  m_Name: Song_1 3
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: The Four Seasons
+  author: Antonio Lucio Vivaldi
+  albumArt: {fileID: -9173149667658950821, guid: 8a58095c199ce9f4eaa245dd671dd727, type: 3}
+  backgroundColor: {r: 0.80784315, g: 0.49411765, b: 0.49411765, a: 1}
+  easyLevel: 0
+  normalLevel: 0
+  hardLevel: 0
+  outlineSprite: {fileID: 5502903632048691948, guid: 3b0e5d2ee2709b64dbe48b3e43c62f03, type: 3}
+  circleInSprite: {fileID: -1854452903343799123, guid: a0d23003e456b184eb5a75f31aea016a, type: 3}
+  circleOutSprite: {fileID: -4785487798435120723, guid: c9936bb3773df8744afbd23992de77e9, type: 3}
+  score: 0

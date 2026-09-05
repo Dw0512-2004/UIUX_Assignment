@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
+  m_Name: Song_1 2
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: "Symphony No.7 in A major Op. 92 \u2013 2. Allegretto"
+  author: Ludwig van Beethoven
+  albumArt: {fileID: 6918706858342009571, guid: 8d77e78e28c76c241b9f3ce08830584c, type: 3}
+  backgroundColor: {r: 0.6528301, g: 0.31480137, b: 0.08745461, a: 1}
+  easyLevel: 4
+  normalLevel: 7
+  hardLevel: 9
+  outlineSprite: {fileID: -1703589777468224203, guid: 0526112e3d3756f459c4395600b6cd3a, type: 3}
+  circleInSprite: {fileID: -3811876597392025069, guid: 44856e539da113a46864a4845d00ec07, type: 3}
+  circleOutSprite: {fileID: -7029664794836574714, guid: 7d0305ff9616e08489d5dee5f2a8e7ab, type: 3}
+  score: 0
