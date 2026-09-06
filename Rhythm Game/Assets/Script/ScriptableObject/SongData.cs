@@ -9,6 +9,7 @@ public class SongData : ScriptableObject {
     public string songName;
     public string author;
     public Sprite albumArt;          // 唱片封面图
+    public Sprite albumPlaylistArt;          // 唱片封面图
     public Color backgroundColor;    // 背景颜色
 
     [Header("难度数值")]

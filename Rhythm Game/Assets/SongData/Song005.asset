@@ -16,6 +16,7 @@ MonoBehaviour:
   songName: Nocturne in B-flat minor Op. 9, No. 1
   author: Frederic Chopin
   albumArt: {fileID: -9005769944389503070, guid: 3fb8130c07d82fd4a8176856d6ea8a5a, type: 3}
+  albumPlaylistArt: {fileID: 6343467520089043308, guid: be1a6f659b60753429f21d74d38fa89c, type: 3}
   backgroundColor: {r: 0.15686275, g: 0.5058824, b: 0.20784314, a: 1}
   easyLevel: 2
   normalLevel: 6

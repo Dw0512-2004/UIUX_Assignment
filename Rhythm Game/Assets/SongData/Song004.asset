@@ -16,10 +16,11 @@ MonoBehaviour:
   songName: The Four Seasons
   author: Antonio Lucio Vivaldi
   albumArt: {fileID: -9173149667658950821, guid: 8a58095c199ce9f4eaa245dd671dd727, type: 3}
+  albumPlaylistArt: {fileID: 7184703163868852057, guid: 663e99374ff1cba4faf8d28d97d61b7d, type: 3}
   backgroundColor: {r: 0.80784315, g: 0.49411765, b: 0.49411765, a: 1}
-  easyLevel: 0
-  normalLevel: 0
-  hardLevel: 0
+  easyLevel: 2
+  normalLevel: 5
+  hardLevel: 7
   outlineSprite: {fileID: 5502903632048691948, guid: 3b0e5d2ee2709b64dbe48b3e43c62f03, type: 3}
   circleInSprite: {fileID: -1854452903343799123, guid: a0d23003e456b184eb5a75f31aea016a, type: 3}
   circleOutSprite: {fileID: -4785487798435120723, guid: c9936bb3773df8744afbd23992de77e9, type: 3}

@@ -16,6 +16,7 @@ MonoBehaviour:
   songName: Piano Partita No. 2  In C Minor, BWV 826
   author: Johann Sebastian Bach
   albumArt: {fileID: 1529004468571396027, guid: 8963f9114dcbcf845a4e9d7de92eb9dd, type: 3}
+  albumPlaylistArt: {fileID: 8759847786151932026, guid: fe22d4f40259d1e46a261e8a75203993, type: 3}
   backgroundColor: {r: 0.15686275, g: 0.34901962, b: 0.5058824, a: 1}
   easyLevel: 2
   normalLevel: 5

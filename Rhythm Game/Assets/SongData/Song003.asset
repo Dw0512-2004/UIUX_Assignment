@@ -16,6 +16,7 @@ MonoBehaviour:
   songName: "Symphony No.7 in A major Op. 92 \u2013 2. Allegretto"
   author: Ludwig van Beethoven
   albumArt: {fileID: 6918706858342009571, guid: 8d77e78e28c76c241b9f3ce08830584c, type: 3}
+  albumPlaylistArt: {fileID: 5405892349122075350, guid: d1c6a6c7ddc335b47a25315445a65604, type: 3}
   backgroundColor: {r: 0.6528301, g: 0.31480137, b: 0.08745461, a: 1}
   easyLevel: 4
   normalLevel: 7
