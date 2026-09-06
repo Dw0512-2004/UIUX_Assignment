@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
-  m_Name: Song_1 1
+  m_Name: Song002
   m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songID: Song002
   songName: Piano Partita No. 2  In C Minor, BWV 826
   author: Johann Sebastian Bach
   albumArt: {fileID: 1529004468571396027, guid: 8963f9114dcbcf845a4e9d7de92eb9dd, type: 3}

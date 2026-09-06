@@ -293,6 +293,16 @@ MonoBehaviour:
   outlineImage: {fileID: 1103708809}
   circleInImage: {fileID: 2146005278}
   circleOutImage: {fileID: 1942298722}
+  scoreText: {fileID: 707100785}
+  gradeText: {fileID: 0}
+  starIcons:
+  - {fileID: 1944599245}
+  - {fileID: 517672552}
+  - {fileID: 552061309}
+  likeIcon: {fileID: 687594426}
+  likedSprite: {fileID: -2295161403876383767, guid: 5e113800ae953a64f91ee86ec9cd80f8, type: 3}
+  unlikedSprite: {fileID: 2042618042975637441, guid: 5006bbf714fc1ef4fa09c8b7101dc62f, type: 3}
+  lockOverlay: {fileID: 0}
 --- !u!225 &44151762
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1852,7 +1862,7 @@ GameObject:
   - component: {fileID: 687594427}
   - component: {fileID: 687594426}
   - component: {fileID: 687594429}
-  - component: {fileID: 687594428}
+  - component: {fileID: 687594430}
   m_Layer: 5
   m_Name: Like
   m_TagString: Untagged
@@ -1917,21 +1927,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687594424}
   m_CullTransparentMesh: 1
---- !u!114 &687594428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687594424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf0518b3b333bd49866ca9b428a71db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HeartToggle
-  heartImage: {fileID: 687594426}
-  emptyHeart: {fileID: 2042618042975637441, guid: 5006bbf714fc1ef4fa09c8b7101dc62f, type: 3}
-  fullHeart: {fileID: -2295161403876383767, guid: 5e113800ae953a64f91ee86ec9cd80f8, type: 3}
 --- !u!114 &687594429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1976,9 +1971,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 687594428}
-        m_TargetAssemblyTypeName: HeartToggle, Assembly-CSharp
-        m_MethodName: ToggleHeart
+      - m_Target: {fileID: 687594430}
+        m_TargetAssemblyTypeName: LikeButtonController, Assembly-CSharp
+        m_MethodName: OnLikeButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1988,6 +1983,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &687594430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687594424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ba2227aae742546aa67a81ab6fd917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LikeButtonController
+  heartImage: {fileID: 687594426}
+  emptyHeart: {fileID: 2042618042975637441, guid: 5006bbf714fc1ef4fa09c8b7101dc62f, type: 3}
+  fullHeart: {fileID: -2295161403876383767, guid: 5e113800ae953a64f91ee86ec9cd80f8, type: 3}
 --- !u!1 &699282334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,6 +2758,9 @@ MonoBehaviour:
   EasyText: {fileID: 167300951}
   NormalText: {fileID: 1377614635}
   HardText: {fileID: 146439015}
+  likeButtonController: {fileID: 687594430}
+  scoreDisplay: {fileID: 1116563015}
+  difficultySelector: {fileID: 2087144158}
   inputAction: {fileID: 0}
   isSpinning: 0
 --- !u!1 &1103708807
@@ -2825,6 +2838,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103708807}
   m_CullTransparentMesh: 1
+--- !u!1 &1116563014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116563016}
+  - component: {fileID: 1116563015}
+  m_Layer: 5
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1116563015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116563014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e8b41da6db8ed499939e994a5e5a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreDisplayController
+  scoreText: {fileID: 707100785}
+  gradeImage: {fileID: 866824295}
+  gradeC: {fileID: -606033477821260893, guid: 7aaf7dd57c25f16468592cd3f46086ec, type: 3}
+  gradeB: {fileID: 7425438597007568885, guid: 071d8fa45ea6b7940a6ece028ae24a18, type: 3}
+  gradeA: {fileID: -8680797543115379092, guid: 00d1412390985894983649150d550aac, type: 3}
+  gradeS: {fileID: -1182827721247122346, guid: 6a0fde5d2d3f50742b2c43efc64bb50b, type: 3}
+  starImages:
+  - {fileID: 1944599247}
+  - {fileID: 517672554}
+  - {fileID: 552061311}
+  starGray: {fileID: 8408448797325785980, guid: 1756829bc4f709442b0ce36ece668588, type: 3}
+  starYellow: {fileID: -5800047418597522962, guid: d6a2714eb71d0ec44bf5c033250822d8, type: 3}
+--- !u!224 &1116563016
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116563014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 540, y: 960}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1168327144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,6 +3244,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377614633}
   m_CullTransparentMesh: 1
+--- !u!1 &1481376326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1481376327}
+  - component: {fileID: 1481376328}
+  m_Layer: 5
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1481376327
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481376326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 540, y: 960}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1481376328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481376326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5883ef77a4360d44cae942ecb705b99f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveManager
 --- !u!1 &1506834250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,6 +3701,50 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1701113472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701113474}
+  - component: {fileID: 1701113473}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1701113473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701113472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a281b94e74f7f469ed38cb28db357e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeScreen
+--- !u!4 &1701113474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701113472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 302.88004, y: 543.2142, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1758982721
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,6 +4248,8 @@ MonoBehaviour:
   - image: {fileID: 215270314}
     emptySprite: {fileID: -556663896244417668, guid: 01894889deabb564f8ff132093976ca2, type: 3}
     fullSprite: {fileID: -3135913613390903670, guid: 12d6a6928288ca443860e2afef9cff0a, type: 3}
+  songCarousel: {fileID: 1086220863}
+  scoreDisplay: {fileID: 1116563015}
 --- !u!1 &2122790274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,7 +4568,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5700929120722668180}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1701113473}
+        m_TargetAssemblyTypeName: ChangeScreen, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Profile
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1193544210489493085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4667,7 +4846,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1263521429793881998}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1701113473}
+        m_TargetAssemblyTypeName: ChangeScreen, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Song Select Scene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1875697161285192201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5936,6 +6127,16 @@ MonoBehaviour:
   outlineImage: {fileID: 4861672547592517978}
   circleInImage: {fileID: 5466638888855541731}
   circleOutImage: {fileID: 8234218643493663955}
+  scoreText: {fileID: 707100785}
+  gradeText: {fileID: 0}
+  starIcons:
+  - {fileID: 1944599245}
+  - {fileID: 517672552}
+  - {fileID: 552061309}
+  likeIcon: {fileID: 687594426}
+  likedSprite: {fileID: -2295161403876383767, guid: 5e113800ae953a64f91ee86ec9cd80f8, type: 3}
+  unlikedSprite: {fileID: 2042618042975637441, guid: 5006bbf714fc1ef4fa09c8b7101dc62f, type: 3}
+  lockOverlay: {fileID: 0}
 --- !u!222 &7611627086951645075
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6112,6 +6313,16 @@ MonoBehaviour:
   outlineImage: {fileID: 3641421075397629741}
   circleInImage: {fileID: 5030712046577695941}
   circleOutImage: {fileID: 1079143427849576909}
+  scoreText: {fileID: 707100785}
+  gradeText: {fileID: 0}
+  starIcons:
+  - {fileID: 1944599245}
+  - {fileID: 517672552}
+  - {fileID: 552061309}
+  likeIcon: {fileID: 687594426}
+  likedSprite: {fileID: -2295161403876383767, guid: 5e113800ae953a64f91ee86ec9cd80f8, type: 3}
+  unlikedSprite: {fileID: 2042618042975637441, guid: 5006bbf714fc1ef4fa09c8b7101dc62f, type: 3}
+  lockOverlay: {fileID: 0}
 --- !u!222 &8951562781840175125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6135,3 +6346,6 @@ SceneRoots:
   - {fileID: 699282337}
   - {fileID: 1905093825}
   - {fileID: 306746215}
+  - {fileID: 1481376327}
+  - {fileID: 1116563016}
+  - {fileID: 1701113474}

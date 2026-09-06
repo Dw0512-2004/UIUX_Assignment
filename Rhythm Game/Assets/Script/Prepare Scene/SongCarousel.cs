@@ -29,6 +29,10 @@ public class SongCarousel : MonoBehaviour {
     public TextMeshProUGUI NormalText;
     public TextMeshProUGUI HardText;
 
+    public LikeButtonController likeButtonController; // 拖入场景里固定的这个UI
+    public ScoreDisplayController scoreDisplay; // 拖入场景里固定的这个UI
+    public DifficultySelector difficultySelector; // 拖入难度选择器,拿到当前选中难度
+
     public InputActionAsset inputAction;
     private InputAction m_Next;
     private InputAction m_Previous;
@@ -144,6 +148,11 @@ public class SongCarousel : MonoBehaviour {
         NormalText.text = data.normalLevel.ToString();
         HardText.text = data.hardLevel.ToString();
 
+        likeButtonController.RefreshForSong(data.songID);
+
+        string difficultyName = difficultySelector.GetCurrentDifficultyName(); // 见下方
+        scoreDisplay.RefreshDisplay(data.songID, difficultyName);
+
         // 歌名、作者、分数这些之后一样在这里更新
         // songNameText.text = data.songName;
         // authorText.text = data.author;
@@ -239,5 +248,8 @@ public class SongCarousel : MonoBehaviour {
         });
 
         yield return new WaitUntil(() => done);
+    }
+    public string GetCurrentSongID() {
+        return songs[centerIndex].songID;
     }
 }

@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
-  m_Name: Song_1 4
+  m_Name: Song005
   m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songID: Song005
   songName: Nocturne in B-flat minor Op. 9, No. 1
   author: Frederic Chopin
   albumArt: {fileID: -9005769944389503070, guid: 3fb8130c07d82fd4a8176856d6ea8a5a, type: 3}

@@ -2,6 +2,9 @@
 
 [CreateAssetMenu(fileName = "NewSong", menuName = "Song/SongData")]
 public class SongData : ScriptableObject {
+    [Header("唯一识别码 (不要重复!)")]
+    public string songID; // 例如 "song_001",自己起名字,保证每首歌不同就行
+
     [Header("基本信息")]
     public string songName;
     public string author;

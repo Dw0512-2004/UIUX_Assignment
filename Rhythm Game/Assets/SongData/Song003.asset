@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41f006172ccc2b047a73b3f776166e15, type: 3}
-  m_Name: Song_1 2
+  m_Name: Song003
   m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songID: Song003
   songName: "Symphony No.7 in A major Op. 92 \u2013 2. Allegretto"
   author: Ludwig van Beethoven
   albumArt: {fileID: 6918706858342009571, guid: 8d77e78e28c76c241b9f3ce08830584c, type: 3}
