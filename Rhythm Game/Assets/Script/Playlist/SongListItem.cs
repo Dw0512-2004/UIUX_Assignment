@@ -7,9 +7,9 @@ public class SongListItem : MonoBehaviour {
     public Image background;
     public Sprite selectedColor;
     public Sprite unselectedColor;
-    public Sprite lockedColor; // 新增:未解锁时的背景样式
+    public Sprite lockedColor; // 未解锁时的背景样式
 
-    private bool isSelected = false; // 记录当前是否被选中,方便解锁状态变化时重新计算
+    private bool isSelected = false; // 记录当前是否被选中
 
     [Header("歌曲基本信息")]
     public Image albumImage;       // 音乐图片
@@ -40,7 +40,7 @@ public class SongListItem : MonoBehaviour {
     public Sprite starBright;
     public Sprite starGray;
 
-    private string currentDifficulty = "easy"; // 记录目前是哪个难度,方便Like/Lock之外的刷新用
+    private string currentDifficulty = "easy"; // 记录目前是哪个难度
 
     private SongData songData;
     private System.Action<SongData> onClickCallback;
@@ -61,12 +61,12 @@ public class SongListItem : MonoBehaviour {
         RefreshGrades();
     }
 
-    // 点击整个item时调用(Button的OnClick绑定这个,或者用EventTrigger)
+    // 点击整个item时调用
     public void OnItemClicked() {
         onClickCallback?.Invoke(songData);
     }
 
-    // 点击item内的Like按钮时调用(要单独一个Button,阻止事件冒泡到OnItemClicked)
+    // 点击item内的Like按钮时调用
     public void OnLikeClicked() {
         SaveManager.Instance.ToggleLiked(songData.songID);
         RefreshLikeIcon();
@@ -80,7 +80,7 @@ public class SongListItem : MonoBehaviour {
     public void RefreshLockIcon() {
         bool unlocked = SaveManager.Instance.IsUnlocked(songData.songID);
         lockIcon.SetActive(!unlocked);
-        RefreshBackground(); // 锁定状态变了,背景也要跟着重新判断
+        RefreshBackground(); 
     }
 
     public void RefreshGrades() {
@@ -95,7 +95,7 @@ public class SongListItem : MonoBehaviour {
             case "A": target.sprite = gradeA; break;
             case "B": target.sprite = gradeB; break;
             case "C": target.sprite = gradeC; break;
-            default: target.sprite = gradeEmpty; break; // 没玩过 = 灰色
+            default: target.sprite = gradeEmpty; break; 
         }
     }
 
@@ -104,15 +104,21 @@ public class SongListItem : MonoBehaviour {
         RefreshBackground();
     }
 
-    // 难度切换时(外部难度按钮触发),更新显示的号码/颜色
+    // 难度切换时(外部难度按钮触发),更新显示的号码/颜色 (已适配新版 SongData 结构)
     public void UpdateDifficultyDisplay(string difficulty, Color bgColor) {
         currentDifficulty = difficulty;
         difficultyBackground.color = bgColor;
 
         switch (difficulty.ToLower()) {
-            case "easy": difficultyLevelText.text = songData.easyLevel.ToString(); break;
-            case "normal": difficultyLevelText.text = songData.normalLevel.ToString(); break;
-            case "hard": difficultyLevelText.text = songData.hardLevel.ToString(); break;
+            case "easy": 
+                difficultyLevelText.text = songData.easyDifficulty.level.ToString(); 
+                break;
+            case "normal": 
+                difficultyLevelText.text = songData.normalDifficulty.level.ToString(); 
+                break;
+            case "hard": 
+                difficultyLevelText.text = songData.hardDifficulty.level.ToString(); 
+                break;
         }
 
         RefreshStars();
@@ -137,4 +143,17 @@ public class SongListItem : MonoBehaviour {
     }
 
     public string GetSongID() => songData.songID;
+
+    // 💡 额外提供一个便捷方法：当玩家点击开始游戏时，可以通过这个获取当前选中难度对应的音乐和谱面
+    public (AudioClip clip, TextAsset json) GetSelectedDifficultyData() {
+        switch (currentDifficulty.ToLower()) {
+            case "normal":
+                return (songData.normalDifficulty.musicClip, songData.normalDifficulty.beatmapJson);
+            case "hard":
+                return (songData.hardDifficulty.musicClip, songData.hardDifficulty.beatmapJson);
+            case "easy":
+            default:
+                return (songData.easyDifficulty.musicClip, songData.easyDifficulty.beatmapJson);
+        }
+    }
 }

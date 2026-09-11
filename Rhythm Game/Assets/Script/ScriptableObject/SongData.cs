@@ -12,10 +12,18 @@ public class SongData : ScriptableObject {
     public Sprite albumPlaylistArt;          // 唱片封面图
     public Color backgroundColor;    // 背景颜色
 
-    [Header("难度数值")]
-    public int easyLevel;     // 例如 3
-    public int normalLevel;   // 例如 5
-    public int hardLevel;     // 例如 8
+    [System.Serializable]
+    public struct DifficultyData 
+    {
+        public int level;                // 难度等级数字 (例如 3, 5, 8)
+        public AudioClip musicClip;      // 该难度的音乐片段
+        public TextAsset beatmapJson;    // 该难度的 JSON 谱面文件
+    }
+
+    [Header("各难度详细配置")]
+    public DifficultyData easyDifficulty;
+    public DifficultyData normalDifficulty;
+    public DifficultyData hardDifficulty;
 
     [Header("难度相关图案 (随歌曲变化)")]
     public Sprite outlineSprite;    // outline图

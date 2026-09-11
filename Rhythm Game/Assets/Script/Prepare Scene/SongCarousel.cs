@@ -42,7 +42,6 @@ public class SongCarousel : MonoBehaviour {
         m_Previous = InputSystem.actions.FindAction("Previous");
     }
 
-
     void Start() {
         int leftIndex = GetLeftIndex();
         int rightIndex = GetRightIndex();
@@ -136,35 +135,26 @@ public class SongCarousel : MonoBehaviour {
 
     // 其他UI(歌名文字、作者文字、背景色、分数)在这里统一更新
     private void OnCenterSongChanged(SongData data) {
-        // 背景颜色平滑过渡(用DOTween一起做,比直接赋值瞬间变色更好看)
+        // 背景颜色平滑过渡
         if (backgroundImage != null) {
             backgroundImage.DOColor(data.backgroundColor, backgroundFadeDuration);
         }
 
-        SongName.text = data.songName;
-        AuthorName.text = data.author;
+        if (SongName != null) SongName.text = data.songName;
+        if (AuthorName != null) AuthorName.text = data.author;
 
-        EasyText.text = data.easyLevel.ToString();
-        NormalText.text = data.normalLevel.ToString();
-        HardText.text = data.hardLevel.ToString();
+        // 💡 适配新版 SongData 结构：从嵌套结构中读取难度等级
+        if (EasyText != null) EasyText.text = data.easyDifficulty.level.ToString();
+        if (NormalText != null) NormalText.text = data.normalDifficulty.level.ToString();
+        if (HardText != null) HardText.text = data.hardDifficulty.level.ToString();
 
-        likeButtonController.RefreshForSong(data.songID);
+        if (likeButtonController != null) likeButtonController.RefreshForSong(data.songID);
 
-        string difficultyName = difficultySelector.GetCurrentDifficultyName(); // 见下方
-        scoreDisplay.RefreshDisplay(data.songID, difficultyName);
-
-        // 歌名、作者、分数这些之后一样在这里更新
-        // songNameText.text = data.songName;
-        // authorText.text = data.author;
-        // scoreText.text = data.score.ToString();
-
-        // 三个难度号码,假设你有三个难度按钮上的文字/或者当前选中难度对应的号码
-        // 之前做的DifficultySelector,可以在这里通知它更新号码显示
-        // difficultySelector.UpdateLevels(data.easyLevel, data.normalLevel, data.hardLevel);
+        if (difficultySelector != null) {
+            string difficultyName = difficultySelector.GetCurrentDifficultyName();
+            if (scoreDisplay != null) scoreDisplay.RefreshDisplay(data.songID, difficultyName);
+        }
     }
-
-
-
 
     // shuffle
     public bool isSpinning = false;
@@ -192,20 +182,15 @@ public class SongCarousel : MonoBehaviour {
     private IEnumerator SpinToTarget(int targetIndex) {
         isSpinning = true;
 
-        // 额外空转的圈数,让随机感更强(可依需求调整,比如1~2圈)
         int extraLoops = Random.Range(1, 3);
-
-        // 从当前位置往"下一首"方向走到目标要走几步
         int directSteps = (targetIndex - centerIndex + songs.Count) % songs.Count;
         int totalSteps = directSteps + extraLoops * songs.Count;
 
-        // 至少保证有个基本步数,不会太快就停(比如太近的时候也要有点转的感觉)
         if (totalSteps < 8) totalSteps += songs.Count;
 
         for (int i = 0; i < totalSteps; i++) {
-            float t = (float)i / totalSteps; // 0~1的进度
-            // 前面快、后面慢:duration从很短逐渐变长
-            float stepDuration = Mathf.Lerp(0.08f, 0.35f, t * t); // t*t让减速更明显
+            float t = (float)i / totalSteps; 
+            float stepDuration = Mathf.Lerp(0.08f, 0.35f, t * t); 
 
             yield return StartCoroutine(DoOneStep(stepDuration, isLastStep: i == totalSteps - 1));
         }
@@ -213,7 +198,6 @@ public class SongCarousel : MonoBehaviour {
         isSpinning = false;
     }
 
-    // 执行"下一首"这个方向的单步动画,duration可自定义
     private IEnumerator DoOneStep(float duration, bool isLastStep) {
         bool done = false;
 
@@ -231,7 +215,6 @@ public class SongCarousel : MonoBehaviour {
         seq.Join(recycled.transform.DOScale(sideScale, duration));
         seq.Join(recycled.canvasGroup.DOFade(0.5f, duration));
 
-        // 最后一步加一个"落地弹一下"的效果,增强停止感
         if (isLastStep) {
             seq.Append(rightSlot.transform.DOPunchScale(Vector3.one * 0.1f, 0.25f, 4, 0.5f));
         }
@@ -249,7 +232,16 @@ public class SongCarousel : MonoBehaviour {
 
         yield return new WaitUntil(() => done);
     }
+
     public string GetCurrentSongID() {
         return songs[centerIndex].songID;
+    }
+
+    // 💡 额外提供一个便捷方法：获取当前中心歌曲的完整 SongData 数据
+    public SongData GetCurrentSongData() {
+        if (songs != null && songs.Count > 0) {
+            return songs[centerIndex];
+        }
+        return null;
     }
 }
