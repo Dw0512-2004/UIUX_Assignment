@@ -1,99 +1,87 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class InputManager : MonoBehaviour
 {
-    public float hitLineY = -3f; // 判定线 Y 坐标
-    
-    // 追踪当前正在被按住的长按滑条（按轨道索引保存）
-    private LongTile[] activeHoldTiles = new LongTile[4]; 
+    // 記錄【觸控ID或鼠標】當前正在按住的【HitZone 判定區】
+    private Dictionary<int, Hitzone> activeTouches = new Dictionary<int, Hitzone>();
 
     void Update()
     {
-        if (GameManager.Instance.currentState != GameManager.GameState.Playing) return;
+        if (Manager.Instance.currentState != Manager.GameState.Playing) return;
 
-        // 1. 检测刚按下的瞬间 (Press Down)
-        bool isPressedDown = false;
-        Vector2 screenPos = Vector2.zero;
-
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        // 1. 處理電腦端鼠標 (使用保持狀態 isPressed，而不是單帧事件，避免誤判)
+        if (Mouse.current != null)
         {
-            screenPos = Mouse.current.position.ReadValue();
-            isPressedDown = true;
-        }
-        else if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
-        {
-            screenPos = Touchscreen.current.primaryTouch.position.ReadValue();
-            isPressedDown = true;
-        }
-
-        if (isPressedDown)
-        {
-            ProcessTouchDown(screenPos);
-        }
-
-        // 2. 检测手指松开的瞬间 (Release Up) - 用于中断长按
-        bool isReleased = false;
-        if (Mouse.current != null && Mouse.current.leftButton.wasReleasedThisFrame)
-        {
-            isReleased = true;
-        }
-        else if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasReleasedThisFrame)
-        {
-            isReleased = true;
-        }
-
-        if (isReleased)
-        {
-            ProcessTouchRelease();
-        }
-    }
-
-    private void ProcessTouchDown(Vector2 screenPosition)
-    {
-        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(screenPosition);
-        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-
-        if (hit.collider != null && hit.collider.CompareTag("Note"))
-        {
-            // 检查是不是普通块 (Tile)
-            Tile hitTile = hit.collider.GetComponent<Tile>();
-            if (hitTile != null)
+            int mouseId = -1;
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                float distance = Mathf.Abs(hitTile.transform.position.y - hitLineY);
-                if (distance <= 1.2f) // 判定范围内
+                ProcessTouchDown(Mouse.current.position.ReadValue(), mouseId);
+            }
+            else if (Mouse.current.leftButton.wasReleasedThisFrame)
+            {
+                ProcessTouchRelease(mouseId);
+            }
+        }
+
+        // 2. 處理手機端多點觸控
+        if (Touchscreen.current != null)
+        {
+            foreach (var touch in Touchscreen.current.touches)
+            {
+                int touchId = touch.touchId.ReadValue();
+                var phase = touch.phase.ReadValue();
+
+                if (phase == UnityEngine.InputSystem.TouchPhase.Began)
                 {
-                    ScoreManager.Instance.AddScore(100, "Perfect");
-                    hitTile.OnHit();
+                    ProcessTouchDown(touch.position.ReadValue(), touchId);
+                }
+                else if (phase == UnityEngine.InputSystem.TouchPhase.Ended || phase == UnityEngine.InputSystem.TouchPhase.Canceled)
+                {
+                    ProcessTouchRelease(touchId);
                 }
             }
+        }
+    }
 
-            // 检查是不是长按块 (LongTile)
-            LongTile longTile = hit.collider.GetComponent<LongTile>();
-            if (longTile != null)
+    private void ProcessTouchDown(Vector2 screenPosition, int touchId)
+    {
+        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(screenPosition);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(worldPoint, Vector2.zero);
+
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.collider != null && hit.collider.CompareTag("HitZone"))
             {
-                // 通过反射或直接在 LongTile 里获取 laneIndex，或者在射线中获取
-                // 这里假设 LongTile 也有判定或直接触发 OnHeadHit
-                longTile.OnHeadHit();
-                
-                // 记录当前轨道正在按住（这里假设可以通过组件获取轨道，或者简化处理）
-                // 提示：你可以给 LongTile 增加一个公共属性 public int LaneIndex => laneIndex;
-                int lane = longTile.LaneIndex; // 需要在 LongTile 里把 laneIndex 设为 public 属性
-                activeHoldTiles[lane] = longTile;
+                Hitzone zone = hit.collider.GetComponent<Hitzone>();
+                if (zone != null)
+                {
+                    // 💡 核心修復：如果這個 ID 之前有殘留記錄，先安全移除，絕對不在此處呼叫 OnRelease() 
+                    if (activeTouches.ContainsKey(touchId))
+                    {
+                        activeTouches.Remove(touchId);
+                    }
+
+                    zone.OnPress();               
+                    activeTouches[touchId] = zone; // 成功記錄當前按下的區域
+                    break; 
+                }
             }
         }
     }
 
-    private void ProcessTouchRelease()
+    private void ProcessTouchRelease(int touchId)
     {
-        // 当玩家松开手指时，中断所有正在进行的 Hold 状态
-        for (int i = 0; i < activeHoldTiles.Length; i++)
+        // 只有當玩家【真正松開】時，才通知對應的 HitZone 釋放
+        if (activeTouches.ContainsKey(touchId))
         {
-            if (activeHoldTiles[i] != null)
+            Hitzone zone = activeTouches[touchId];
+            if (zone != null)
             {
-                activeHoldTiles[i].BreakHold(); // 玩家中途松手，判定失败
-                activeHoldTiles[i] = null;
+                zone.OnRelease();
             }
+            activeTouches.Remove(touchId);
         }
     }
 }

@@ -35,7 +35,7 @@ public class TileSpawner : MonoBehaviour
 {
     [Header("Theme Settings (4套主题资源配置)")]
     public GameThemeData[] themes = new GameThemeData[4]; 
-    public SpriteRenderer backgroundRenderer;             
+    public SpriteRenderer backgroundRenderer;            
 
     [Header("Fallback Prefabs (默认/备用预制体)")]
     public GameObject tapTilePrefab;   
@@ -63,6 +63,12 @@ public class TileSpawner : MonoBehaviour
 
     void Start()
     {
+        // 💡 新增：读取上一次保存的主题索引。如果没有记录，就默认用 0
+        GameSettings.currentThemeIndex = PlayerPrefs.GetInt("SavedThemeIndex", 0);
+        
+        // 一进场景就立刻预览该主题的背景
+        PreviewBackground(GameSettings.currentThemeIndex);
+
         LoadSongAndBeatmapFromManager();
         LoadBeatmapFromJSON();
     }
@@ -70,6 +76,7 @@ public class TileSpawner : MonoBehaviour
     // 从全局 GameManager 读取选中的歌曲和难度对应的音乐与谱面
     void LoadSongAndBeatmapFromManager()
     {
+        // 💡 修复：将 Manager 修正为 GameManager
         if (Manager.Instance != null && Manager.Instance.selectedSong != null)
         {
             SongData song = Manager.Instance.selectedSong;
@@ -144,11 +151,15 @@ public class TileSpawner : MonoBehaviour
     {
         int index = GameSettings.currentThemeIndex;
 
+        // 💡 新增：真正开始游戏时，把玩家选中的主题永久保存下来，留给下一局用
+        PlayerPrefs.SetInt("SavedThemeIndex", index);
+        PlayerPrefs.Save();
+
         if (themes != null && themes.Length > 0)
         {
             if (index < 0 || index >= themes.Length) index = 0;
             GameThemeData currentTheme = themes[index];
-            Debug.Log($"成功应用主题: {currentTheme.themeName} (索引: {index})");
+            Debug.Log($"成功应用并保存主题: {currentTheme.themeName} (索引: {index})");
 
             if (currentTheme.tapTilePrefab != null) tapTilePrefab = currentTheme.tapTilePrefab;
             if (currentTheme.slideTilePrefab != null) slideTilePrefab = currentTheme.slideTilePrefab;
@@ -199,16 +210,16 @@ public class TileSpawner : MonoBehaviour
         hasGameStarted = true;
         isGameEnded = false;
 
-        if (GameManager.Instance != null)
+        if (Manager.Instance != null)
         {
-            GameManager.Instance.StartGame();
+            Manager.Instance.StartGame();
         }
     }
 
     void Update()
     {
-        if (!hasGameStarted || GameManager.Instance == null) return;
-        if (GameManager.Instance.currentState != GameManager.GameState.Playing) return;
+        if (!hasGameStarted || Manager.Instance == null) return;
+        if (Manager.Instance.currentState != Manager.GameState.Playing) return;
 
         double currentMusicTime = AudioSettings.dspTime - audioStartDSPTime;
 
@@ -239,7 +250,8 @@ public class TileSpawner : MonoBehaviour
         if (data.noteType == 0)
         {
             Tile tapTile = newTile.GetComponent<Tile>();
-            if (tapTile != null) tapTile.Initialize(noteSpeed);
+            // 💡 关键修改：加上 data.laneIndex
+            if (tapTile != null) tapTile.Initialize(noteSpeed, data.laneIndex); 
         }
         else if (data.noteType == 1)
         {
@@ -258,7 +270,16 @@ public class TileSpawner : MonoBehaviour
         isGameEnded = true;
         Debug.Log("音乐播完且音符生成完毕，游戏胜利！弹出 Win Menu");
 
-        GameManager.Instance.currentState = GameManager.GameState.GameOver;
+        // 💡 新增：通知 ScoreManager 玩家赢了，请计算星星并保存最高分！
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.SaveGameData(isWin: true);
+        }
+
+        if (Manager.Instance != null)
+        {
+            Manager.Instance.currentState = Manager.GameState.GameOver;
+        }
 
         if (PanelController.Instance != null)
         {

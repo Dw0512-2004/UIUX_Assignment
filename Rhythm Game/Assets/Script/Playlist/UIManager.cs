@@ -44,7 +44,13 @@ public class UIManager : MonoBehaviour
             return;
         }
 
-        // 4. 跳转场景
+        // 💡 4. 跳转场景前，把选歌界面的预览音乐关掉
+        if (listPopulator.previewAudioSource != null && listPopulator.previewAudioSource.isPlaying)
+        {
+            listPopulator.previewAudioSource.Stop();
+        }
+
+        // 5. 正式跳转场景
         SceneManager.LoadScene(gameSceneName);
     }
 }

@@ -20,7 +20,7 @@ public class SongCarousel : MonoBehaviour {
     private bool isAnimating = false;
 
     [Header("其他需要跟着歌曲切换的UI")]
-    public Image backgroundImage;       // 背景图片,要跟着换颜色
+    public Image backgroundImage;       
     public float backgroundFadeDuration = 0.4f;
 
     public TextMeshProUGUI SongName;
@@ -29,54 +29,100 @@ public class SongCarousel : MonoBehaviour {
     public TextMeshProUGUI NormalText;
     public TextMeshProUGUI HardText;
 
-    public LikeButtonController likeButtonController; // 拖入场景里固定的这个UI
-    public ScoreDisplayController scoreDisplay; // 拖入场景里固定的这个UI
-    public DifficultySelector difficultySelector; // 拖入难度选择器,拿到当前选中难度
+    public LikeButtonController likeButtonController; 
+    public ScoreDisplayController scoreDisplay; 
+    public DifficultySelector difficultySelector; 
 
-    public InputActionAsset inputAction;
-    private InputAction m_Next;
-    private InputAction m_Previous;
+    [Header("预览音乐播放器")]
+    public AudioSource previewAudioSource; 
+    [Header("预览设置 (秒)")]
+    public float previewDuration = 10f;    // 播放时长（10秒）
+    public float previewStartTime = 30f;   // 从第几秒开始截取
 
-    private void Awake() {
-        m_Next = InputSystem.actions.FindAction("Next");
-        m_Previous = InputSystem.actions.FindAction("Previous");
-    }
+    [Header("左右滑动切歌手势灵敏度")]
+    public float minSwipeDistance = 60f;  
+    private Vector2 swipeStartPos;        
 
     void Start() {
+        if (songs == null || songs.Count == 0) return;
+
+        InitializeSlots();
+        OnCenterSongChanged(songs[centerIndex], false); 
+    }
+
+    private void InitializeSlots() {
         int leftIndex = GetLeftIndex();
         int rightIndex = GetRightIndex();
 
-        leftSlot.Populate(songs[leftIndex]);
-        centerSlot.Populate(songs[centerIndex]);
-        rightSlot.Populate(songs[rightIndex]);
+        leftSlot.Populate(songs[leftIndex], OnSlotClicked);
+        centerSlot.Populate(songs[centerIndex], OnSlotClicked);
+        rightSlot.Populate(songs[rightIndex], OnSlotClicked);
 
         leftSlot.SetInstantState(leftPos.position, sideScale, 0.5f, false);
         centerSlot.SetInstantState(centerPos.position, centerScale, 1f, true);
         rightSlot.SetInstantState(rightPos.position, sideScale, 0.5f, false);
-
-        OnCenterSongChanged(songs[centerIndex]); // 通知其他UI(歌名/作者/背景色/分数)更新
     }
 
-    private void Update() {
-        if (m_Next.WasPerformedThisFrame()) {
-            ShowNext();
-        }
-        if (m_Previous.WasPerformedThisFrame()) {
-            ShowPrevious();
+    private void OnSlotClicked(RecordSlot clickedSlot) {
+        if (isAnimating || isSpinning) return;
+
+        if (clickedSlot == rightSlot) {
+            ShowNext(true); 
+        } else if (clickedSlot == leftSlot) {
+            ShowPrevious(true); 
+        } else if (clickedSlot == centerSlot) {
+            PlaySongPreview(songs[centerIndex]); // 点击中间：播放 10 秒预览
         }
     }
 
-    // 从左往右滑(左边来到中间) = 上一首
-    public void ShowPrevious() {
+    void Update() {
+        // 💡 核心修改：检测 10 秒预览是否播放完毕，播完后自动停止并恢复 BGM
+        if (previewAudioSource != null && previewAudioSource.isPlaying && previewAudioSource.clip != null) {
+            float targetEndTime = previewStartTime + previewDuration;
+            if (previewAudioSource.time >= targetEndTime) {
+                StopSongPreview(); // 10秒到期，停止预览并恢复菜单 BGM
+            }
+        }
+
+        if (isAnimating || isSpinning) return;
+        DetectSwipeGesture();
+    }
+
+    private void DetectSwipeGesture() {
+        Pointer currentPointer = Pointer.current;
+        if (currentPointer == null) return;
+
+        if (currentPointer.press.wasPressedThisFrame) {
+            swipeStartPos = currentPointer.position.ReadValue();
+        }
+
+        if (currentPointer.press.wasReleasedThisFrame) {
+            Vector2 swipeEndPos = currentPointer.position.ReadValue();
+            float distanceX = swipeEndPos.x - swipeStartPos.x; 
+            float distanceY = Mathf.Abs(swipeEndPos.y - swipeStartPos.y); 
+
+            if (Mathf.Abs(distanceX) > minSwipeDistance && Mathf.Abs(distanceX) > distanceY) {
+                StopSongPreview(); // 滑动切歌时停止预览并恢复 BGM
+
+                if (distanceX > 0) {
+                    ShowPrevious(false); 
+                } else {
+                    ShowNext(false); 
+                }
+            }
+        }
+    }
+
+    public void ShowPrevious(bool playAudioAfterMove = false) {
         if (isAnimating) return;
+        StopSongPreview();
         isAnimating = true;
 
         int newCenterIndex = GetLeftIndex();
         int newLeftIndex = (newCenterIndex - 1 + songs.Count) % songs.Count;
 
-        // 原本的right slot要被recycle成新的left slot
         RecordSlot recycled = rightSlot;
-        recycled.Populate(songs[newLeftIndex]);
+        recycled.Populate(songs[newLeftIndex], OnSlotClicked); 
         recycled.SetInstantState(offLeftPos.position, sideScale, 0.5f, false);
 
         Sequence seq = DOTween.Sequence();
@@ -87,28 +133,27 @@ public class SongCarousel : MonoBehaviour {
         seq.Join(recycled.canvasGroup.DOFade(0.5f, duration));
 
         seq.OnComplete(() => {
-            // 重新指定三个槽位的角色
             RecordSlot oldCenter = centerSlot;
             centerSlot = leftSlot;
             rightSlot = oldCenter;
             leftSlot = recycled;
 
             centerIndex = newCenterIndex;
-            OnCenterSongChanged(songs[centerIndex]);
+            OnCenterSongChanged(songs[centerIndex], playAudioAfterMove); 
             isAnimating = false;
         });
     }
 
-    // 从右往左滑(右边来到中间) = 下一首
-    public void ShowNext() {
+    public void ShowNext(bool playAudioAfterMove = false) {
         if (isAnimating) return;
+        StopSongPreview();
         isAnimating = true;
 
         int newCenterIndex = GetRightIndex();
         int newRightIndex = (newCenterIndex + 1) % songs.Count;
 
         RecordSlot recycled = leftSlot;
-        recycled.Populate(songs[newRightIndex]);
+        recycled.Populate(songs[newRightIndex], OnSlotClicked); 
         recycled.SetInstantState(offRightPos.position, sideScale, 0.5f, false);
 
         Sequence seq = DOTween.Sequence();
@@ -125,7 +170,7 @@ public class SongCarousel : MonoBehaviour {
             rightSlot = recycled;
 
             centerIndex = newCenterIndex;
-            OnCenterSongChanged(songs[centerIndex]);
+            OnCenterSongChanged(songs[centerIndex], playAudioAfterMove); 
             isAnimating = false;
         });
     }
@@ -133,9 +178,7 @@ public class SongCarousel : MonoBehaviour {
     private int GetLeftIndex() => (centerIndex - 1 + songs.Count) % songs.Count;
     private int GetRightIndex() => (centerIndex + 1) % songs.Count;
 
-    // 其他UI(歌名文字、作者文字、背景色、分数)在这里统一更新
-    private void OnCenterSongChanged(SongData data) {
-        // 背景颜色平滑过渡
+    private void OnCenterSongChanged(SongData data, bool playAudio) {
         if (backgroundImage != null) {
             backgroundImage.DOColor(data.backgroundColor, backgroundFadeDuration);
         }
@@ -143,7 +186,6 @@ public class SongCarousel : MonoBehaviour {
         if (SongName != null) SongName.text = data.songName;
         if (AuthorName != null) AuthorName.text = data.author;
 
-        // 💡 适配新版 SongData 结构：从嵌套结构中读取难度等级
         if (EasyText != null) EasyText.text = data.easyDifficulty.level.ToString();
         if (NormalText != null) NormalText.text = data.normalDifficulty.level.ToString();
         if (HardText != null) HardText.text = data.hardDifficulty.level.ToString();
@@ -154,20 +196,58 @@ public class SongCarousel : MonoBehaviour {
             string difficultyName = difficultySelector.GetCurrentDifficultyName();
             if (scoreDisplay != null) scoreDisplay.RefreshDisplay(data.songID, difficultyName);
         }
+
+        if (playAudio) {
+            PlaySongPreview(data);
+        } else {
+            StopSongPreview(); 
+        }
     }
 
-    // shuffle
+    private void PlaySongPreview(SongData data) {
+        if (previewAudioSource != null && data.easyDifficulty.musicClip != null) {
+            previewAudioSource.Stop();
+            previewAudioSource.clip = data.easyDifficulty.musicClip;
+
+            float clipLength = previewAudioSource.clip.length;
+            float startTime = previewStartTime;
+            if (startTime >= clipLength) {
+                startTime = 0f; 
+            }
+
+            previewAudioSource.time = startTime;
+            previewAudioSource.Play();
+
+            // 💡 核心联动：开始播放 10 秒预览时，暂停全局菜单 BGM
+            if (MenuBGMManager.Instance != null) {
+                MenuBGMManager.Instance.PauseBGM();
+            }
+
+            Debug.Log($"[SongCarousel] 播放 10 秒预览并暂停菜单 BGM: {data.songName}");
+        }
+    }
+
+    private void StopSongPreview() {
+        if (previewAudioSource != null && previewAudioSource.isPlaying) {
+            previewAudioSource.Stop();
+        }
+
+        // 💡 核心联动：预览停止（无论是10秒到期、滑动、还是切歌），恢复菜单 BGM
+        if (MenuBGMManager.Instance != null) {
+            MenuBGMManager.Instance.ResumeBGM();
+        }
+    }
+
     public bool isSpinning = false;
 
-    // 随机按钮绑定这个方法
     public void OnRandomButtonPressed() {
         if (isAnimating || isSpinning) return;
 
+        StopSongPreview(); 
         int targetIndex = GetRandomTargetIndex();
         StartCoroutine(SpinToTarget(targetIndex));
     }
 
-    // 避免抽到跟当前一样的歌
     private int GetRandomTargetIndex() {
         if (songs.Count <= 1) return centerIndex;
 
@@ -196,6 +276,7 @@ public class SongCarousel : MonoBehaviour {
         }
 
         isSpinning = false;
+        PlaySongPreview(songs[centerIndex]); // 随机抽歌停下后，播放 10 秒预览
     }
 
     private IEnumerator DoOneStep(float duration, bool isLastStep) {
@@ -205,7 +286,7 @@ public class SongCarousel : MonoBehaviour {
         int newRightIndex = (newCenterIndex + 1) % songs.Count;
 
         RecordSlot recycled = leftSlot;
-        recycled.Populate(songs[newRightIndex]);
+        recycled.Populate(songs[newRightIndex], OnSlotClicked);
         recycled.SetInstantState(offRightPos.position, sideScale, 0.5f, false);
 
         Sequence seq = DOTween.Sequence();
@@ -226,7 +307,7 @@ public class SongCarousel : MonoBehaviour {
             rightSlot = recycled;
 
             centerIndex = newCenterIndex;
-            OnCenterSongChanged(songs[centerIndex]);
+            OnCenterSongChanged(songs[centerIndex], false); 
             done = true;
         });
 
@@ -237,7 +318,6 @@ public class SongCarousel : MonoBehaviour {
         return songs[centerIndex].songID;
     }
 
-    // 💡 额外提供一个便捷方法：获取当前中心歌曲的完整 SongData 数据
     public SongData GetCurrentSongData() {
         if (songs != null && songs.Count > 0) {
             return songs[centerIndex];

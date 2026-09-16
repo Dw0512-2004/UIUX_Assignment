@@ -1,0 +1,3348 @@
+{
+    "songName": "Nocturne_in_B-flat_minor_Op_9_No_1_converted.midi",
+    "bpm": 120.0,
+    "notes": [
+        {
+            "hitTime": 4.599999904632568,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 5.319791793823242,
+            "laneIndex": 0,
+            "noteType": 1,
+            "duration": 0.44166600704193118
+        },
+        {
+            "hitTime": 5.912499904632568,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.05937499925494194
+        },
+        {
+            "hitTime": 6.435417175292969,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 6.946875095367432,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 7.561458110809326,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 8.096875190734864,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 8.596875190734864,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 9.165624618530274,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 9.827082633972168,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 10.351041793823243,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 10.872917175292969,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.27812498807907107
+        },
+        {
+            "hitTime": 11.395833015441895,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 11.989583015441895,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 12.5,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.8708329796791077
+        },
+        {
+            "hitTime": 13.405207633972168,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 13.90625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 14.416666984558106,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 14.939582824707032,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 15.461458206176758,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 15.985417366027832,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 16.508333206176759,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 17.018749237060548,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 17.622915267944337,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 18.122915267944337,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 18.657291412353517,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 19.214584350585939,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 19.78333282470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.2562499940395355
+        },
+        {
+            "hitTime": 20.33020782470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 20.910415649414064,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 21.491668701171876,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 21.991668701171876,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 22.537500381469728,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 23.071876525878908,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 23.617708206176759,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 24.140623092651368,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 24.674999237060548,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 25.22083282470703,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 26.011457443237306,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 26.8125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 27.416667938232423,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.2666659951210022
+        },
+        {
+            "hitTime": 27.916667938232423,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 28.42708396911621,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.9864590167999268
+        },
+        {
+            "hitTime": 29.03125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 29.71666717529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 30.274999618530275,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 30.832292556762697,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.32499998807907107
+        },
+        {
+            "hitTime": 31.435415267944337,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.27812498807907107
+        },
+        {
+            "hitTime": 31.959375381469728,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 32.633331298828128,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.3135420083999634
+        },
+        {
+            "hitTime": 33.19062423706055,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 33.7010383605957,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09375
+        },
+        {
+            "hitTime": 34.27083206176758,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 34.85208511352539,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.37187498807907107
+        },
+        {
+            "hitTime": 35.36249923706055,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 35.89791488647461,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 36.43229293823242,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 36.96562576293945,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 37.46562576293945,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.3614580035209656
+        },
+        {
+            "hitTime": 38.093753814697269,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.30208298563957217
+        },
+        {
+            "hitTime": 39.20833206176758,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 39.766666412353519,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.18541599810123444
+        },
+        {
+            "hitTime": 40.428123474121097,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 41.009376525878909,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 41.51979064941406,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 42.01979064941406,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 42.623958587646487,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 43.134376525878909,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.41770800948143008
+        },
+        {
+            "hitTime": 43.71666717529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 44.28541564941406,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.4989579916000366
+        },
+        {
+            "hitTime": 44.795833587646487,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 45.30729293823242,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 45.85416793823242,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.27812498807907107
+        },
+        {
+            "hitTime": 46.400001525878909,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 46.93333053588867,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 47.73645782470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 48.328125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.30208298563957217
+        },
+        {
+            "hitTime": 48.83958435058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 49.39687728881836,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 49.89687728881836,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 50.43124771118164,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 51.115623474121097,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 51.615623474121097,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.2104170024394989
+        },
+        {
+            "hitTime": 52.12708282470703,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 52.695831298828128,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 53.265625,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 53.89375305175781,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 54.49687576293945,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 55.08958435058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 55.844791412353519,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 56.40208435058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 56.90208435058594,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 57.412498474121097,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 57.95937728881836,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 58.55104064941406,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 59.0625,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 59.58437728881836,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.22187499701976777
+        },
+        {
+            "hitTime": 60.08541488647461,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 60.60729217529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 61.13020706176758,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 61.712501525878909,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 62.327083587646487,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 62.83854293823242,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 63.348960876464847,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 63.86145782470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 64.37187957763672,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 64.90625,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 65.49791717529297,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.05937499925494194
+        },
+        {
+            "hitTime": 66.04479217529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 66.60208129882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 67.10208129882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 67.64895629882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 68.15937805175781,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 68.76354217529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.2666659951210022
+        },
+        {
+            "hitTime": 69.28541564941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 69.80937957763672,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 70.44792175292969,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 70.9937515258789,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 71.50416564941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12916600704193116
+        },
+        {
+            "hitTime": 72.05104064941406,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 72.65520477294922,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3020839989185333
+        },
+        {
+            "hitTime": 73.18958282470703,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 73.7593765258789,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 74.28125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 74.81562042236328,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.5104169845581055
+        },
+        {
+            "hitTime": 75.32707977294922,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.17499999701976777
+        },
+        {
+            "hitTime": 75.87396240234375,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 76.47708129882813,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 77.09270477294922,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 77.68645477294922,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 78.23124694824219,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 78.75416564941406,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 79.43958282470703,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.4427089989185333
+        },
+        {
+            "hitTime": 79.96249389648438,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 80.47396087646485,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.27812498807907107
+        },
+        {
+            "hitTime": 81.12396240234375,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3729169964790344
+        },
+        {
+            "hitTime": 81.78645324707031,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 82.37916564941406,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 1.1385409832000733
+        },
+        {
+            "hitTime": 83.69270324707031,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3833340108394623
+        },
+        {
+            "hitTime": 84.35417175292969,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.27812498807907107
+        },
+        {
+            "hitTime": 84.93437957763672,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 85.48124694824219,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 86.015625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 86.6187515258789,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.6385419964790344
+        },
+        {
+            "hitTime": 87.16458129882813,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 87.76979064941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 88.2927017211914,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 88.82604217529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 89.32604217529297,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.3499999940395355
+        },
+        {
+            "hitTime": 89.84896087646485,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 90.40625,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 90.95207977294922,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3135420083999634
+        },
+        {
+            "hitTime": 91.47604370117188,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 92.01041412353516,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 92.54375457763672,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 93.078125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 93.63645935058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 94.26354217529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 94.78645324707031,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 95.31979370117188,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10625000298023224
+        },
+        {
+            "hitTime": 95.83229064941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 96.34270477294922,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.22083400189876557
+        },
+        {
+            "hitTime": 96.84270477294922,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3833340108394623
+        },
+        {
+            "hitTime": 97.5406265258789,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 98.07395935058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 98.60833740234375,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.39479199051856997
+        },
+        {
+            "hitTime": 99.1187515258789,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 99.6312484741211,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.3135420083999634
+        },
+        {
+            "hitTime": 100.23541259765625,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 100.74583435058594,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 101.31458282470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.26875001192092898
+        },
+        {
+            "hitTime": 101.8499984741211,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 102.39582824707031,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.32499998807907107
+        },
+        {
+            "hitTime": 102.96458435058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 103.546875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 104.09166717529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 104.63750457763672,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.18541699647903443
+        },
+        {
+            "hitTime": 105.13750457763672,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.1635420024394989
+        },
+        {
+            "hitTime": 105.64895629882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.2666670083999634
+        },
+        {
+            "hitTime": 106.26458740234375,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 106.78645324707031,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 107.29895782470703,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.778124988079071
+        },
+        {
+            "hitTime": 107.87916564941406,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 108.390625,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 108.93645477294922,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 109.47187042236328,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 109.98228454589844,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 110.49270629882813,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 111.20104217529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09375
+        },
+        {
+            "hitTime": 111.78333282470703,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 112.45624542236328,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3364579975605011
+        },
+        {
+            "hitTime": 112.96771240234375,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.871874988079071
+        },
+        {
+            "hitTime": 113.47917175292969,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 114.01354217529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 114.60520935058594,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.6395840048789978
+        },
+        {
+            "hitTime": 115.29166412353516,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.2666659951210022
+        },
+        {
+            "hitTime": 115.89582824707031,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 116.42916870117188,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 116.95207977294922,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.26875001192092898
+        },
+        {
+            "hitTime": 117.453125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 117.96354675292969,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 118.59062194824219,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 119.18228912353516,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.2802079916000366
+        },
+        {
+            "hitTime": 119.75312805175781,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 120.35624694824219,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 120.86771392822266,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 121.51875305175781,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 122.05313110351563,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 122.56354522705078,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 123.0979232788086,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 123.65625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 124.34166717529297,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.3364579975605011
+        },
+        {
+            "hitTime": 124.875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 125.56145477294922,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 126.0843734741211,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 126.71041870117188,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.30208298563957217
+        },
+        {
+            "hitTime": 127.33958435058594,
+            "laneIndex": 0,
+            "noteType": 1,
+            "duration": 0.40625
+        },
+        {
+            "hitTime": 127.8499984741211,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.3135420083999634
+        },
+        {
+            "hitTime": 128.55833435058595,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 129.11563110351563,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.10625000298023224
+        },
+        {
+            "hitTime": 129.67396545410157,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.17395900189876557
+        },
+        {
+            "hitTime": 130.21978759765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 130.73020935058595,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 131.33541870117188,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 131.8468780517578,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 132.4270782470703,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 132.96041870117188,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.3031249940395355
+        },
+        {
+            "hitTime": 133.49583435058595,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 134.03021240234376,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.37187498807907107
+        },
+        {
+            "hitTime": 134.5989532470703,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 135.12290954589845,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 135.6573028564453,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 136.16770935058595,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 136.71353149414063,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 137.27186584472657,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 137.81771850585938,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 138.44479370117188,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.18541599810123444
+        },
+        {
+            "hitTime": 138.9552001953125,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11770900338888169
+        },
+        {
+            "hitTime": 139.4791717529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 140.02499389648438,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 140.57083129882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 141.10626220703126,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 141.63958740234376,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 142.13958740234376,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 142.6854248046875,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 143.21978759765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 143.71978759765626,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 144.23020935058595,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 144.74166870117188,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 145.28854370117188,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 145.81040954589845,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 146.3333282470703,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 146.9479217529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.19895799458026887
+        },
+        {
+            "hitTime": 147.46041870117188,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 148.00625610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 148.5166778564453,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 149.1218719482422,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 149.65625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 150.18959045410157,
+            "laneIndex": 0,
+            "noteType": 1,
+            "duration": 0.4291670024394989
+        },
+        {
+            "hitTime": 150.8406219482422,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.5822920203208923
+        },
+        {
+            "hitTime": 151.41041564941407,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 151.92083740234376,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 152.4552001953125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 152.9666748046875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09375
+        },
+        {
+            "hitTime": 153.50103759765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 154.00103759765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 154.55833435058595,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 155.1281280517578,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 155.6385498046875,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 156.24270629882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 156.78854370117188,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.2562499940395355
+        },
+        {
+            "hitTime": 157.28854370117188,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 157.83436584472657,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 158.34584045410157,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 158.87916564941407,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.3614580035209656
+        },
+        {
+            "hitTime": 159.4031219482422,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 160.0187530517578,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 160.54061889648438,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 161.04165649414063,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 161.56353759765626,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 162.07501220703126,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 162.5968780517578,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 163.109375,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.4989579916000366
+        },
+        {
+            "hitTime": 163.6551971435547,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 164.20103454589845,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 164.71145629882813,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.19895899295806886
+        },
+        {
+            "hitTime": 165.24688720703126,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 165.76979064941407,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 166.3385467529297,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 166.8489532470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09375
+        },
+        {
+            "hitTime": 167.38436889648438,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 167.89479064941407,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 168.39479064941407,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 168.90625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 169.41770935058595,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 169.96353149414063,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 170.578125,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 171.16041564941407,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.34791600704193118
+        },
+        {
+            "hitTime": 171.67083740234376,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 172.2166748046875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 172.7395782470703,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.2802090048789978
+        },
+        {
+            "hitTime": 173.29791259765626,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 173.80833435058595,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 174.56353759765626,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 175.13333129882813,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 175.67916870117188,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 176.4458465576172,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 177.0500030517578,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 177.57290649414063,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 178.22291564941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 178.79165649414063,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.1875
+        },
+        {
+            "hitTime": 179.29270935058595,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 179.85000610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 180.39479064941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 180.9427032470703,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 181.53436279296876,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 182.2312469482422,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 182.8125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 183.38124084472657,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.4760420024394989
+        },
+        {
+            "hitTime": 183.88124084472657,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 184.41458129882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 184.91563415527345,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 185.49583435058595,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 186.14584350585938,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 186.72708129882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12916700541973115
+        },
+        {
+            "hitTime": 187.27395629882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 187.87709045410157,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 188.3885498046875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.30208298563957217
+        },
+        {
+            "hitTime": 188.9354248046875,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 189.45729064941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.23229099810123444
+        },
+        {
+            "hitTime": 189.96875,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 190.51353454589845,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 191.09584045410157,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 191.6999969482422,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 192.25625610351563,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 192.75729370117188,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 193.3489532470703,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 193.86041259765626,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 194.37083435058595,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 194.94166564941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 195.55625915527345,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.18541699647903443
+        },
+        {
+            "hitTime": 196.12498474121095,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 196.71875,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 197.25311279296876,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 197.82186889648438,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 198.33229064941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.22083300352096559
+        },
+        {
+            "hitTime": 198.92604064941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 199.43646240234376,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 199.95938110351563,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 200.4812469482422,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 200.98228454589845,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 201.49270629882813,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.17395900189876557
+        },
+        {
+            "hitTime": 202.0500030517578,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 202.59584045410157,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.11770900338888169
+        },
+        {
+            "hitTime": 203.13124084472657,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 203.7354278564453,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 204.2687530517578,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.41874998807907107
+        },
+        {
+            "hitTime": 204.78125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 205.37290954589845,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 205.88436889648438,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 206.43020629882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3031249940395355
+        },
+        {
+            "hitTime": 206.95416259765626,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 207.52291870117188,
+            "laneIndex": 3,
+            "noteType": 1,
+            "duration": 0.4760409891605377
+        },
+        {
+            "hitTime": 208.0447998046875,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 208.55625915527345,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.39583298563957217
+        },
+        {
+            "hitTime": 209.07916259765626,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 209.60208129882813,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.34791699051856997
+        },
+        {
+            "hitTime": 210.17083740234376,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.9072920083999634
+        },
+        {
+            "hitTime": 210.79896545410157,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 211.484375,
+            "laneIndex": 0,
+            "noteType": 1,
+            "duration": 0.4291670024394989
+        },
+        {
+            "hitTime": 212.00625610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 212.50625610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.23333300650119782
+        },
+        {
+            "hitTime": 213.00625610351563,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 213.5166778564453,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 214.16770935058595,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.41874998807907107
+        },
+        {
+            "hitTime": 214.78436279296876,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 215.29478454589845,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 215.81771850585938,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 216.5968780517578,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 217.14166259765626,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.37187498807907107
+        },
+        {
+            "hitTime": 217.72291564941407,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.23229099810123444
+        },
+        {
+            "hitTime": 218.25625610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 218.7687530517578,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 219.36041259765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 219.90625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 220.52291870117188,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 221.04583740234376,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 221.56771850585938,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 222.12498474121095,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.7791669964790344
+        },
+        {
+            "hitTime": 222.91563415527345,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.32499998807907107
+        },
+        {
+            "hitTime": 223.41563415527345,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 224.0187530517578,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 224.54270935058595,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 225.0885467529297,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 225.5989532470703,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 226.13333129882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 226.63333129882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 227.13333129882813,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.37187498807907107
+        },
+        {
+            "hitTime": 227.72499084472657,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.6270830035209656
+        },
+        {
+            "hitTime": 228.52708435058595,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 229.06146240234376,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 229.57290649414063,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.3135409951210022
+        },
+        {
+            "hitTime": 230.09478759765626,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.3843750059604645
+        },
+        {
+            "hitTime": 230.64166259765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 231.1531219482422,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 231.6635284423828,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.6041659712791443
+        },
+        {
+            "hitTime": 232.1739501953125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 232.7208251953125,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 233.2552032470703,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.32499998807907107
+        },
+        {
+            "hitTime": 234.0447998046875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 234.56875610351563,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 235.07916259765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 235.61354064941407,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 236.1239471435547,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.4427089989185333
+        },
+        {
+            "hitTime": 236.78750610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 237.36770629882813,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 237.890625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 238.4375,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 239.08750915527345,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.23229199647903443
+        },
+        {
+            "hitTime": 239.77186584472657,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 240.27186584472657,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.1875
+        },
+        {
+            "hitTime": 240.79583740234376,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 241.4458465576172,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.18541699647903443
+        },
+        {
+            "hitTime": 241.9562530517578,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 242.45729064941407,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 242.96771240234376,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 243.49063110351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 244.09375,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 244.89584350585938,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 245.953125,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 246.6854248046875,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 247.20834350585938,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.18541699647903443
+        },
+        {
+            "hitTime": 247.81146240234376,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 248.32290649414063,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.05937499925494194
+        },
+        {
+            "hitTime": 248.84584045410157,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 249.41458129882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.34791699051856997
+        },
+        {
+            "hitTime": 249.99583435058595,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 250.53125,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 251.20416259765626,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.30208298563957217
+        },
+        {
+            "hitTime": 251.72708129882813,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 252.24896240234376,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11770900338888169
+        },
+        {
+            "hitTime": 252.8072967529297,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 253.31875610351563,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 253.82916259765626,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.23229099810123444
+        },
+        {
+            "hitTime": 254.49270629882813,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.4760420024394989
+        },
+        {
+            "hitTime": 255.1427001953125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 255.71145629882813,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 256.234375,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0708329975605011
+        },
+        {
+            "hitTime": 256.7572937011719,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 257.3031311035156,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 257.8145751953125,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 258.3145751953125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 258.8489685058594,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 259.3708190917969,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 259.8822937011719,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 260.5104064941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 261.1489562988281,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 261.6833190917969,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.22083400189876557
+        },
+        {
+            "hitTime": 262.3229064941406,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.44166600704193118
+        },
+        {
+            "hitTime": 262.9031066894531,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.30208298563957217
+        },
+        {
+            "hitTime": 263.4604187011719,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 264.0531311035156,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 264.5645751953125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 265.1333312988281,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0927089974284172
+        },
+        {
+            "hitTime": 265.7145690917969,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.5697919726371765
+        },
+        {
+            "hitTime": 266.28436279296877,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 266.96978759765627,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 267.5958251953125,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.24375000596046449
+        },
+        {
+            "hitTime": 268.0958251953125,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.09375
+        },
+        {
+            "hitTime": 268.5958251953125,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 269.14166259765627,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 269.7218933105469,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 270.2458190917969,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 270.76873779296877,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 271.2791748046875,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.20937499403953553
+        },
+        {
+            "hitTime": 271.847900390625,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.23229099810123444
+        },
+        {
+            "hitTime": 272.3489685058594,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.44166699051856997
+        },
+        {
+            "hitTime": 272.870849609375,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395900189876557
+        },
+        {
+            "hitTime": 273.4750061035156,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 274.03228759765627,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.24479100108146668
+        },
+        {
+            "hitTime": 274.5562438964844,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 275.2406311035156,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 275.7635498046875,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 276.34478759765627,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 276.8791809082031,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 277.3895568847656,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 277.9822998046875,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 278.56353759765627,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 279.1208190917969,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 279.6322937011719,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 280.1791687011719,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.23229099810123444
+        },
+        {
+            "hitTime": 280.6895751953125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.22083400189876557
+        },
+        {
+            "hitTime": 281.24688720703127,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 281.81561279296877,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 282.3395690917969,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 282.8499755859375,
+            "laneIndex": 3,
+            "noteType": 1,
+            "duration": 0.5104169845581055
+        },
+        {
+            "hitTime": 283.4197692871094,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.32499998807907107
+        },
+        {
+            "hitTime": 283.941650390625,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.41874998807907107
+        },
+        {
+            "hitTime": 284.59271240234377,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 285.21978759765627,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 285.8697814941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.06979099661111832
+        },
+        {
+            "hitTime": 286.4750061035156,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104199945926667
+        },
+        {
+            "hitTime": 287.09063720703127,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.3364579975605011
+        },
+        {
+            "hitTime": 287.7291564941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 288.31146240234377,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 288.8687438964844,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 289.4135437011719,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.18541599810123444
+        },
+        {
+            "hitTime": 289.9593505859375,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.19895799458026887
+        },
+        {
+            "hitTime": 290.5416564941406,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.39479100704193118
+        },
+        {
+            "hitTime": 291.06353759765627,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 291.57501220703127,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.16249999403953553
+        },
+        {
+            "hitTime": 292.07501220703127,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 292.92291259765627,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 293.433349609375,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 294.07293701171877,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.3135409951210022
+        },
+        {
+            "hitTime": 294.6656188964844,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 295.4312744140625,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 295.9427185058594,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.12916700541973115
+        },
+        {
+            "hitTime": 296.48956298828127,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 297.0354309082031,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 297.54583740234377,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.17395900189876557
+        },
+        {
+            "hitTime": 298.08123779296877,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 0.41770800948143008
+        },
+        {
+            "hitTime": 298.73126220703127,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 299.41668701171877,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.10416600108146668
+        },
+        {
+            "hitTime": 299.92706298828127,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08229199796915055
+        },
+        {
+            "hitTime": 300.4281311035156,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.17395800352096559
+        },
+        {
+            "hitTime": 300.96148681640627,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.1395840048789978
+        },
+        {
+            "hitTime": 301.46148681640627,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.3364590108394623
+        },
+        {
+            "hitTime": 302.0541687011719,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.25520798563957217
+        },
+        {
+            "hitTime": 302.5541687011719,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.09270799905061722
+        },
+        {
+            "hitTime": 303.09893798828127,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.11562500149011612
+        },
+        {
+            "hitTime": 304.34271240234377,
+            "laneIndex": 3,
+            "noteType": 1,
+            "duration": 1.661458969116211
+        },
+        {
+            "hitTime": 304.8656311035156,
+            "laneIndex": 1,
+            "noteType": 1,
+            "duration": 1.1270829439163209
+        },
+        {
+            "hitTime": 306.015625,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 308.328125,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 309.3260498046875,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 309.9427185058594,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 310.75518798828127,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 311.3010559082031,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.12812499701976777
+        },
+        {
+            "hitTime": 311.9645690917969,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.7197920083999634
+        },
+        {
+            "hitTime": 312.68438720703127,
+            "laneIndex": 3,
+            "noteType": 0,
+            "duration": 0.0697920024394989
+        },
+        {
+            "hitTime": 313.26458740234377,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 1.8354170322418213
+        },
+        {
+            "hitTime": 315.0885314941406,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.08124999701976776
+        },
+        {
+            "hitTime": 315.738525390625,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.19895799458026887
+        },
+        {
+            "hitTime": 316.43646240234377,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.10416699945926666
+        },
+        {
+            "hitTime": 316.9937744140625,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.2906250059604645
+        },
+        {
+            "hitTime": 317.5052185058594,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.4427089989185333
+        },
+        {
+            "hitTime": 318.65521240234377,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.9750000238418579
+        },
+        {
+            "hitTime": 319.78125,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.953125
+        },
+        {
+            "hitTime": 321.1645812988281,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 0.6614590287208557
+        },
+        {
+            "hitTime": 322.0593566894531,
+            "laneIndex": 0,
+            "noteType": 0,
+            "duration": 0.19687500596046449
+        },
+        {
+            "hitTime": 322.5823059082031,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 323.1041564941406,
+            "laneIndex": 0,
+            "noteType": 1,
+            "duration": 1.40625
+        },
+        {
+            "hitTime": 323.76666259765627,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.24479100108146668
+        },
+        {
+            "hitTime": 324.3249816894531,
+            "laneIndex": 2,
+            "noteType": 0,
+            "duration": 0.13958300650119782
+        },
+        {
+            "hitTime": 324.8822937011719,
+            "laneIndex": 1,
+            "noteType": 0,
+            "duration": 0.15104100108146668
+        },
+        {
+            "hitTime": 326.3812561035156,
+            "laneIndex": 2,
+            "noteType": 1,
+            "duration": 1.0333329439163209
+        }
+    ]
+}

@@ -18,9 +18,18 @@ MonoBehaviour:
   albumArt: {fileID: 6918706858342009571, guid: 8d77e78e28c76c241b9f3ce08830584c, type: 3}
   albumPlaylistArt: {fileID: 5405892349122075350, guid: d1c6a6c7ddc335b47a25315445a65604, type: 3}
   backgroundColor: {r: 0.6528301, g: 0.31480137, b: 0.08745461, a: 1}
-  easyLevel: 4
-  normalLevel: 7
-  hardLevel: 9
+  easyDifficulty:
+    level: 0
+    musicClip: {fileID: 8300000, guid: 93a01141bae59c84083c669308fa4301, type: 3}
+    beatmapJson: {fileID: 4900000, guid: dd9d3ca0c563f6645a93f2000e907a84, type: 3}
+  normalDifficulty:
+    level: 1
+    musicClip: {fileID: 8300000, guid: 93a01141bae59c84083c669308fa4301, type: 3}
+    beatmapJson: {fileID: 4900000, guid: 45117e1c7545eed49b379e7d4faa658b, type: 3}
+  hardDifficulty:
+    level: 2
+    musicClip: {fileID: 8300000, guid: 93a01141bae59c84083c669308fa4301, type: 3}
+    beatmapJson: {fileID: 4900000, guid: 221fddbce0d86e245852925ecf474871, type: 3}
   outlineSprite: {fileID: -1703589777468224203, guid: 0526112e3d3756f459c4395600b6cd3a, type: 3}
   circleInSprite: {fileID: -3811876597392025069, guid: 44856e539da113a46864a4845d00ec07, type: 3}
   circleOutSprite: {fileID: -7029664794836574714, guid: 7d0305ff9616e08489d5dee5f2a8e7ab, type: 3}
