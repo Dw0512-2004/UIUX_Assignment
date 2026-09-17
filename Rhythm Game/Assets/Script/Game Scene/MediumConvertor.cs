@@ -84,7 +84,7 @@ public class MediumMidiToJson : MonoBehaviour
 
         string jsonOutput = JsonUtility.ToJson(newBeatmap, true);
         File.WriteAllText(outputPath, jsonOutput);
-        UnityEditor.AssetDatabase.Refresh();
+        //UnityEditor.AssetDatabase.Refresh();
         
         Debug.Log($"Medium 谱面生成成功！共生成 {newBeatmap.notes.Count} 个音符 -> {outputPath}");
     }

@@ -90,7 +90,7 @@ public class HardConvertor : MonoBehaviour
         File.WriteAllText(outputPath, jsonOutput);
         
         // 刷新 Unity 资源库，让生成的 JSON 立即出现在项目面板中
-        UnityEditor.AssetDatabase.Refresh();
+        //UnityEditor.AssetDatabase.Refresh();
         
         Debug.Log($"转换成功！经过密度过滤后，共生成 {newBeatmap.notes.Count} 个音符，已自动保存至: {outputPath}");
     }

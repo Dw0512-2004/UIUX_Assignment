@@ -23,9 +23,10 @@ public class DifficultyToggleButton : MonoBehaviour {
 
     private int currentIndex = 0;
 
+    // DifficultyToggleButton.cs
     void Start() {
+        Debug.Log($"[ToggleButton] Start执行, currentIndex = {currentIndex}, 颜色 = {options[currentIndex].backgroundColor}");
         RefreshDisplay();
-        NotifyListUpdate();
     }
 
     // 按钮OnClick绑定这一个方法
@@ -51,5 +52,9 @@ public class DifficultyToggleButton : MonoBehaviour {
 
     public string GetCurrentDifficultyName() {
         return options[currentIndex].name;
+    }
+
+    public Color GetCurrentColor() {
+        return options[currentIndex].backgroundColor;
     }
 }

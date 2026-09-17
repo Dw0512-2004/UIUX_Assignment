@@ -19,15 +19,15 @@ MonoBehaviour:
   albumPlaylistArt: {fileID: 7184703163868852057, guid: 663e99374ff1cba4faf8d28d97d61b7d, type: 3}
   backgroundColor: {r: 0.80784315, g: 0.49411765, b: 0.49411765, a: 1}
   easyDifficulty:
-    level: 0
+    level: 3
     musicClip: {fileID: 8300000, guid: 54d232202586bc5489865ed137b7f2c0, type: 3}
     beatmapJson: {fileID: 4900000, guid: 52c77124ecc94e444a5da92e4a2b2b71, type: 3}
   normalDifficulty:
-    level: 1
+    level: 6
     musicClip: {fileID: 8300000, guid: 54d232202586bc5489865ed137b7f2c0, type: 3}
     beatmapJson: {fileID: 4900000, guid: 2aaa672f870c58b4ebc119ba2940fdec, type: 3}
   hardDifficulty:
-    level: 2
+    level: 9
     musicClip: {fileID: 8300000, guid: 54d232202586bc5489865ed137b7f2c0, type: 3}
     beatmapJson: {fileID: 4900000, guid: 44b7f79b533bb02428633c9d2e8aac3a, type: 3}
   outlineSprite: {fileID: 5502903632048691948, guid: 3b0e5d2ee2709b64dbe48b3e43c62f03, type: 3}

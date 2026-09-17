@@ -11,6 +11,9 @@ public class SongListPopulator : MonoBehaviour {
     [Header("预览音乐播放器")]
     public AudioSource previewAudioSource; // 专门用来在选歌界面试听音乐的 AudioSource
 
+    [Header("难度按钮 (用于初始化同步)")]
+    public DifficultyToggleButton difficultyToggle; // 新增
+
     [Header("预览设置 (秒)")]
     public float previewDuration = 10f;    // 播放时长（10秒）
     public float previewStartTime = 30f;   // 从音乐的第几秒开始截取
@@ -19,7 +22,14 @@ public class SongListPopulator : MonoBehaviour {
     private SongData selectedSong;
 
     void Start() {
-        PopulateList(); 
+        PopulateList();
+
+        if (difficultyToggle != null) {
+            string name = difficultyToggle.GetCurrentDifficultyName();
+            Color color = difficultyToggle.GetCurrentColor();
+            Debug.Log($"[Populator] 初始化难度: {name}, 颜色: {color}");
+            UpdateAllItemsDifficulty(name, color);
+        }
     }
 
     void Update() {
