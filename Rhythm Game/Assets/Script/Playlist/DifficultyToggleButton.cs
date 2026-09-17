@@ -17,6 +17,10 @@ public class DifficultyToggleButton : MonoBehaviour {
 
     public SongListPopulator songListPopulator;
 
+    [Header("UI 点击音效设置")]
+    public AudioClip toggleClickSound;                 // 💡 新增：切換難度按鈕的點擊音效
+    [Range(0f, 1f)] public float toggleClickVolume = 0.5f; // 💡 新增：音量大小
+
     private int currentIndex = 0;
 
     void Start() {
@@ -26,6 +30,11 @@ public class DifficultyToggleButton : MonoBehaviour {
 
     // 按钮OnClick绑定这一个方法
     public void OnDifficultyButtonClicked() {
+        // 💡 新增：當玩家點擊按鈕切換難度時，先播放點擊音效
+        if (toggleClickSound != null) {
+            AudioSource.PlayClipAtPoint(toggleClickSound, Camera.main.transform.position, toggleClickVolume);
+        }
+
         currentIndex = (currentIndex + 1) % options.Length;
         RefreshDisplay();
         NotifyListUpdate();

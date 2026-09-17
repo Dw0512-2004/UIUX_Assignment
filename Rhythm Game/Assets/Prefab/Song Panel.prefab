@@ -1124,6 +1124,8 @@ MonoBehaviour:
   - {fileID: 6222737458705481096}
   starBright: {fileID: -6122763731336984188, guid: 0d20dafeb6fc24a438307cc10429552f, type: 3}
   starGray: {fileID: 3960851472552380041, guid: fba277f209e823b4698669ec64d0f442, type: 3}
+  itemClickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  itemClickVolume: 0.5
 --- !u!1 &6081872623612544989
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,7 +41,15 @@ public class SongCarousel : MonoBehaviour {
 
     [Header("左右滑动切歌手势灵敏度")]
     public float minSwipeDistance = 60f;  
-    private Vector2 swipeStartPos;        
+    private Vector2 swipeStartPos;         
+
+    [Header("UI 点击音效设置")]
+    public AudioClip slotClickSound;                 // 轮盘卡片点击音效
+    [Range(0f, 1f)] public float slotClickVolume = 0.5f; 
+
+    [Header("随机抽歌按鈕点击音效设置")]
+    public AudioClip shuffleClickSound;                 // 💡 新增：隨機抽歌按鈕點擊音效
+    [Range(0f, 1f)] public float shuffleClickVolume = 0.5f; // 💡 新增：音量大小
 
     void Start() {
         if (songs == null || songs.Count == 0) return;
@@ -66,21 +74,24 @@ public class SongCarousel : MonoBehaviour {
     private void OnSlotClicked(RecordSlot clickedSlot) {
         if (isAnimating || isSpinning) return;
 
+        if (slotClickSound != null) {
+            AudioSource.PlayClipAtPoint(slotClickSound, Camera.main.transform.position, slotClickVolume);
+        }
+
         if (clickedSlot == rightSlot) {
             ShowNext(true); 
         } else if (clickedSlot == leftSlot) {
             ShowPrevious(true); 
         } else if (clickedSlot == centerSlot) {
-            PlaySongPreview(songs[centerIndex]); // 点击中间：播放 10 秒预览
+            PlaySongPreview(songs[centerIndex]); 
         }
     }
 
     void Update() {
-        // 💡 核心修改：检测 10 秒预览是否播放完毕，播完后自动停止并恢复 BGM
         if (previewAudioSource != null && previewAudioSource.isPlaying && previewAudioSource.clip != null) {
             float targetEndTime = previewStartTime + previewDuration;
             if (previewAudioSource.time >= targetEndTime) {
-                StopSongPreview(); // 10秒到期，停止预览并恢复菜单 BGM
+                StopSongPreview(); 
             }
         }
 
@@ -102,7 +113,7 @@ public class SongCarousel : MonoBehaviour {
             float distanceY = Mathf.Abs(swipeEndPos.y - swipeStartPos.y); 
 
             if (Mathf.Abs(distanceX) > minSwipeDistance && Mathf.Abs(distanceX) > distanceY) {
-                StopSongPreview(); // 滑动切歌时停止预览并恢复 BGM
+                StopSongPreview(); 
 
                 if (distanceX > 0) {
                     ShowPrevious(false); 
@@ -218,12 +229,9 @@ public class SongCarousel : MonoBehaviour {
             previewAudioSource.time = startTime;
             previewAudioSource.Play();
 
-            // 💡 核心联动：开始播放 10 秒预览时，暂停全局菜单 BGM
             if (MenuBGMManager.Instance != null) {
                 MenuBGMManager.Instance.PauseBGM();
             }
-
-            Debug.Log($"[SongCarousel] 播放 10 秒预览并暂停菜单 BGM: {data.songName}");
         }
     }
 
@@ -232,7 +240,6 @@ public class SongCarousel : MonoBehaviour {
             previewAudioSource.Stop();
         }
 
-        // 💡 核心联动：预览停止（无论是10秒到期、滑动、还是切歌），恢复菜单 BGM
         if (MenuBGMManager.Instance != null) {
             MenuBGMManager.Instance.ResumeBGM();
         }
@@ -242,6 +249,11 @@ public class SongCarousel : MonoBehaviour {
 
     public void OnRandomButtonPressed() {
         if (isAnimating || isSpinning) return;
+
+        // 💡 新增：當玩家點擊隨機抽歌按鈕時，播放點擊音效
+        if (shuffleClickSound != null) {
+            AudioSource.PlayClipAtPoint(shuffleClickSound, Camera.main.transform.position, shuffleClickVolume);
+        }
 
         StopSongPreview(); 
         int targetIndex = GetRandomTargetIndex();
@@ -276,7 +288,7 @@ public class SongCarousel : MonoBehaviour {
         }
 
         isSpinning = false;
-        PlaySongPreview(songs[centerIndex]); // 随机抽歌停下后，播放 10 秒预览
+        PlaySongPreview(songs[centerIndex]); 
     }
 
     private IEnumerator DoOneStep(float duration, bool isLastStep) {

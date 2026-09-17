@@ -487,6 +487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a281b94e74f7f469ed38cb28db357e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScreen
+  clickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  clickVolume: 0.5
 --- !u!4 &503577334
 Transform:
   m_ObjectHideFlags: 0
@@ -1084,6 +1086,8 @@ MonoBehaviour:
   - name: Hard
     backgroundColor: {r: 1, g: 0.057864696, b: 0, a: 1}
   songListPopulator: {fileID: 2143501119}
+  toggleClickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  toggleClickVolume: 0.5
 --- !u!1 &793421886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1120,8 @@ MonoBehaviour:
   listPopulator: {fileID: 2143501119}
   difficultySelector: {fileID: 2143501121}
   gameSceneName: GameScene
+  playButtonSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  playButtonVolume: 0.5
 --- !u!4 &793421888
 Transform:
   m_ObjectHideFlags: 0
@@ -1626,6 +1632,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 020fe8eeb4e69304aafb37f1b302a186, type: 2}
   - {fileID: 11400000, guid: b3a3df1e4b9ed544e85e033b726ba44b, type: 2}
   previewAudioSource: {fileID: 2143501122}
+  previewDuration: 10
+  previewStartTime: 30
 --- !u!4 &2143501120
 Transform:
   m_ObjectHideFlags: 0
@@ -1657,6 +1665,8 @@ MonoBehaviour:
   songCarousel: {fileID: 0}
   songListPopulator: {fileID: 2143501119}
   scoreDisplay: {fileID: 0}
+  difficultyClickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  difficultyClickVolume: 0.5
 --- !u!82 &2143501122
 AudioSource:
   m_ObjectHideFlags: 0

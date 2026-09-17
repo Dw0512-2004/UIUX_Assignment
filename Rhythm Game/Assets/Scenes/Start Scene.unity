@@ -854,7 +854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransistion
   songSettingSceneName: Song Setting Scene
   audioSource: {fileID: 1069456702}
-  clickSfx: {fileID: 8300000, guid: 61dda73d79509684394353b9dff54a43, type: 3}
+  clickSfx: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
   transitionAnimator: {fileID: 768474964}
   triggerName: StartTransition
   animationDuration: 1

@@ -3094,6 +3094,10 @@ MonoBehaviour:
   previewDuration: 10
   previewStartTime: 30
   minSwipeDistance: 60
+  slotClickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  slotClickVolume: 0.5
+  shuffleClickSound: {fileID: 0}
+  shuffleClickVolume: 0.5
   isSpinning: 0
 --- !u!82 &1086220864
 AudioSource:
@@ -4279,6 +4283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a281b94e74f7f469ed38cb28db357e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScreen
+  clickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  clickVolume: 0.5
 --- !u!4 &1701113474
 Transform:
   m_ObjectHideFlags: 0
@@ -4858,6 +4864,8 @@ MonoBehaviour:
   songCarousel: {fileID: 1086220863}
   songListPopulator: {fileID: 0}
   scoreDisplay: {fileID: 1116563015}
+  difficultyClickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  difficultyClickVolume: 0.5
 --- !u!1 &2122790274
 GameObject:
   m_ObjectHideFlags: 0

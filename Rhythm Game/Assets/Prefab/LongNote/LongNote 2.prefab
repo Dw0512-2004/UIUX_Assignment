@@ -49,6 +49,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LongTile
   tailTransform: {fileID: 7989056968773601742}
   bodyRenderer: {fileID: 1112073655185518143}
+  headHitSound: {fileID: 8300000, guid: 7424177a9eb861a48b005a9cfdb7563b, type: 3}
+  completeSound: {fileID: 8300000, guid: 4f6fc7d77292caf47bedb84bc6910042, type: 3}
+  hitVolume: 0.2
 --- !u!212 &4908000323084954369
 SpriteRenderer:
   serializedVersion: 2

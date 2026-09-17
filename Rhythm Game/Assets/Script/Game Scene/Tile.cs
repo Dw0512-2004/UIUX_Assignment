@@ -6,7 +6,11 @@ public class Tile : MonoBehaviour
     public int laneIndex; 
     private bool isHit = false;
     
-    public bool IsHit => isHit; // 💡 新增：暴露自身状态
+    public bool IsHit => isHit; 
+
+    [Header("Audio Settings")]
+    public AudioClip tapSound; 
+    [Range(0f, 1f)] public float tapVolume = 0.5f; // 💡 控制短按音量，預設為 50%
 
     public void Initialize(float speed, int lane) 
     {
@@ -31,6 +35,12 @@ public class Tile : MonoBehaviour
     {
         if (isHit) return;
         isHit = true;
+
+        // 💡 播放短按音效並套用音量設定
+        if (tapSound != null)
+        {
+            AudioSource.PlayClipAtPoint(tapSound, Camera.main.transform.position, tapVolume);
+        }
 
         if (EffectManager.Instance != null)
         {

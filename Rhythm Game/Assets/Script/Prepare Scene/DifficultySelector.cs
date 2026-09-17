@@ -7,7 +7,7 @@ public class DifficultySelector : MonoBehaviour {
         public Image image;         
         public Sprite emptySprite; 
         public Sprite fullSprite; 
-        public Color themeColor = Color.white; // 💡 顺便支持每个难度专属的背景色(如 Easy绿, Normal蓝, Hard红)
+        public Color themeColor = Color.white; 
     }
 
     public DifficultyOption[] options; // 0: Easy, 1: Normal, 2: Hard
@@ -18,6 +18,10 @@ public class DifficultySelector : MonoBehaviour {
     public SongListPopulator songListPopulator; // 如果用列表，拖入这个
 
     public ScoreDisplayController scoreDisplay;
+
+    [Header("UI 点击音效设置")]
+    public AudioClip difficultyClickSound;                 // 💡 新增：点击难度按钮的音效
+    [Range(0f, 1f)] public float difficultyClickVolume = 0.5f; // 💡 新增：音量大小
 
     void Start() {
         // 默认选中 Easy (索引 0)
@@ -31,6 +35,11 @@ public class DifficultySelector : MonoBehaviour {
     // 绑定到每个难度按钮的 OnClick 事件上 (参数分别填 0, 1, 2)
     public void SelectDifficulty(int index) {
         currentSelectedIndex = index;
+
+        // 💡 新增：只要玩家點擊切換難度，就播放點擊音效
+        if (difficultyClickSound != null) {
+            AudioSource.PlayClipAtPoint(difficultyClickSound, Camera.main.transform.position, difficultyClickVolume);
+        }
 
         // 1. 刷新难度按钮的图标高亮
         for (int i = 0; i < options.Length; i++) {

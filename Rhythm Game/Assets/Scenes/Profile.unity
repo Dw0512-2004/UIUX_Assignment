@@ -2788,6 +2788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a281b94e74f7f469ed38cb28db357e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScreen
+  clickSound: {fileID: 8300000, guid: a3bcbf4fa56142f4ca98e6d5f5274b9c, type: 3}
+  clickVolume: 0.5
 --- !u!4 &1515970831
 Transform:
   m_ObjectHideFlags: 0

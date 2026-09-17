@@ -7,9 +7,18 @@ public class UIManager : MonoBehaviour
     public DifficultySelector difficultySelector; // 拖入你的 DifficultySelector
     public string gameSceneName = "GameScene";    // 你的游戏场景名字
 
+    [Header("UI 点击音效设置")]
+    public AudioClip playButtonSound;                 // 💡 新增：按下 Play 按鈕的點擊音效
+    [Range(0f, 1f)] public float playButtonVolume = 0.5f; // 💡 新增：音量大小
+
     // 绑定到 Play 按钮的 OnClick 事件上
     public void OnPlayButtonClicked()
     {
+        // 💡 新增：當玩家按下 Play 按鈕時，先播放點擊音效
+        if (playButtonSound != null) {
+            AudioSource.PlayClipAtPoint(playButtonSound, Camera.main.transform.position, playButtonVolume);
+        }
+
         if (listPopulator == null)
         {
             Debug.LogError("未绑定 SongListPopulator！");

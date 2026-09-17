@@ -105,3 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   laneIndex: 0
+  tapSound: {fileID: 8300000, guid: 7424177a9eb861a48b005a9cfdb7563b, type: 3}
+  tapVolume: 0.2

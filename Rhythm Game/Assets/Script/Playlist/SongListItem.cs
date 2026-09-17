@@ -40,6 +40,10 @@ public class SongListItem : MonoBehaviour {
     public Sprite starBright;
     public Sprite starGray;
 
+    [Header("UI 点击音效设置")]
+    public AudioClip itemClickSound;                 // 💡 新增：点击卡片的音效
+    [Range(0f, 1f)] public float itemClickVolume = 0.5f; // 💡 新增：点击音效音量
+
     private string currentDifficulty = "easy"; // 记录目前是哪个难度
 
     private SongData songData;
@@ -63,6 +67,11 @@ public class SongListItem : MonoBehaviour {
 
     // 点击整个item时调用
     public void OnItemClicked() {
+        // 💡 新增：只要點擊歌曲卡片，就播放點擊音效
+        if (itemClickSound != null) {
+            AudioSource.PlayClipAtPoint(itemClickSound, Camera.main.transform.position, itemClickVolume);
+        }
+
         onClickCallback?.Invoke(songData);
     }
 
@@ -144,7 +153,6 @@ public class SongListItem : MonoBehaviour {
 
     public string GetSongID() => songData.songID;
 
-    // 💡 额外提供一个便捷方法：当玩家点击开始游戏时，可以通过这个获取当前选中难度对应的音乐和谱面
     public (AudioClip clip, TextAsset json) GetSelectedDifficultyData() {
         switch (currentDifficulty.ToLower()) {
             case "normal":

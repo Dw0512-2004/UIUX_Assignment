@@ -13,11 +13,16 @@ public class LongTile : MonoBehaviour
     public Transform tailTransform;         
     public SpriteRenderer bodyRenderer;     
 
+    [Header("Audio Settings")]
+    public AudioClip headHitSound;  
+    public AudioClip completeSound; 
+    [Range(0f, 1f)] public float hitVolume = 0.5f; // 💡 控制長按音量，預設為 50%
+
     private float initialHeight;      
     private float totalHoldDuration;  
     private float elapsedHoldTime = 0f; 
 
-    private float currentHitLineY; // 记录对齐的 Y 坐标
+    private float currentHitLineY; 
 
     public void Initialize(float speed, int lane, float height)
     {
@@ -38,7 +43,6 @@ public class LongTile : MonoBehaviour
         {
             transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
             
-            // 💡 修复：和单按音符统一，掉出屏幕底端（-6f）才算漏按，再也不会过早判定 Miss！
             if (transform.position.y < -6f)
             {
                 ScoreManager.Instance.Miss();
@@ -77,6 +81,12 @@ public class LongTile : MonoBehaviour
         pos.y = currentHitLineY; 
         transform.position = pos;
 
+        // 💡 播放頭部擊中音效並套用音量設定
+        if (headHitSound != null)
+        {
+            AudioSource.PlayClipAtPoint(headHitSound, Camera.main.transform.position, hitVolume);
+        }
+
         if (EffectManager.Instance != null) EffectManager.Instance.PlayHitEffect(transform.position);
     }
 
@@ -93,6 +103,13 @@ public class LongTile : MonoBehaviour
     {
         isCompleted = true;
         ScoreManager.Instance.AddScore(200, "Perfect"); 
+
+        // 💡 播放長按成功結束的音效並套用音量設定
+        if (completeSound != null)
+        {
+            AudioSource.PlayClipAtPoint(completeSound, Camera.main.transform.position, hitVolume);
+        }
+
         Destroy(gameObject);
     }
 }
